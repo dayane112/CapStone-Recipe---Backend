@@ -16,18 +16,7 @@ router.post('/', recipeCTRL.createRecipe);
 
 
 // Read
-router.get('/', async (req, res) => {
-    try {
-
-        let allRecipe = await Recipe.find({});
-
-        res.json(allRecipe);
-
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({msg: 'Server error'});
-    };
-});
+router.get('/', recipeCTRL.getAllRecipe);
 
 
 // Read by ID

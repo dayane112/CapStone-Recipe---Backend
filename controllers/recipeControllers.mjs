@@ -14,7 +14,20 @@ async function createRecipe(req, res) {
         console.error(err);
         res.status(500).json({msg: 'Server error'});
     };
-}
+};
+
+async function getAllRecipe(req, res) {
+    try {
+
+        let allRecipe = await Recipe.find({});
+
+        res.json(allRecipe);
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({msg: 'Server error'});
+    };
+};
 
 
-export default { createRecipe }
+export default { createRecipe, getAllRecipe }
