@@ -2,6 +2,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
+import connectDB from './db/conn.mjs';
 
 
 // setup
@@ -10,9 +11,16 @@ dotenv.config();
 let PORT = process.env.PORT || 3001
 
 
+// DB connection
+connectDB();
+
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }))
+
+
+// routes
 
 
 // listener
