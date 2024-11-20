@@ -1,4 +1,4 @@
-export default recipe = [
+const recipe = [
     {
         name: "Easy Perfect Yeast Bread",
         category: "baking",
@@ -68,3 +68,5 @@ export default recipe = [
         ]
     },
 ]
+
+export default recipe;

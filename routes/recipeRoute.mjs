@@ -1,4 +1,5 @@
 import express from 'express';
+import recipeCTRL from '../controllers/recipeControllers.mjs';
 import Recipe from '../model/recipeSchema.mjs';
 
 const router = express.Router();
@@ -11,20 +12,7 @@ const router = express.Router();
 
 
 // Create
-router.post('/', async (req, res) => {
-    try {
-
-        let newRecipe = new Recipe(req.body);
-
-        await newRecipe.save();
-
-        res.status(200).json(newRecipe);
-
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({msg: 'Server error'});
-    };
-});
+router.post('/', recipeCTRL.createRecipe);
 
 
 // Read
