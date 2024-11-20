@@ -57,6 +57,21 @@ router.get('/:id', async (req, res) => {
 });
 
 
+// Update
+router.patch('/:id', async (req, res) => {
+    try {
+
+        let updatedRecipe = await Recipe.findByIdAndUpdate(req.params.id, req.body, { new: true });
+
+        res.json(updatedRecipe);
+
+    } catch (err) {
+        rconsole.error(err);
+        res.status(500).json({msg: 'Server error'});
+    };
+});
+
+
 
 
 
