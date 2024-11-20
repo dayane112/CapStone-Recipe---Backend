@@ -42,6 +42,21 @@ router.get('/', async (req, res) => {
 });
 
 
+// Read by ID
+router.get('/:id', async (req, res) => {
+    try {
+
+        let oneRecipe = await Recipe.findById(req.params.id);
+
+        res.json(oneRecipe);
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({msg: 'Server error'});
+    }
+});
+
+
 
 
 
