@@ -3,6 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import connectDB from './db/conn.mjs';
+import recipeRoute from './routes/recipeRoute.mjs';
 
 
 // setup
@@ -17,10 +18,11 @@ connectDB();
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json({ extended: true }))
+app.use(bodyParser.json({ extended: true }));
 
 
 // routes
+app.use('/recipe', recipeRoute);
 
 
 // listener
