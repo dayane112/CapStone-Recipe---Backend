@@ -55,5 +55,18 @@ async function updateOneRecipe(req, res) {
     };
 };
 
+async function deleteOneRecipe(req, res) {
+    try {
+       
+        await Recipe.findByIdAndDelete(req.params.id);
 
-export default { createRecipe, getAllRecipe, getOneRecipe, updateOneRecipe }
+        res.json({ msg: 'Item Deleted' }); 
+        
+    } catch (err) {
+        console.error(err)
+        res.status(500).json({msg: 'Server error'})
+    };
+};
+
+
+export default { createRecipe, getAllRecipe, getOneRecipe, updateOneRecipe, deleteOneRecipe };

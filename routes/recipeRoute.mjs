@@ -28,18 +28,7 @@ router.patch('/:id', recipeCTRL.updateOneRecipe);
 
 
 // Delete
-router.delete('/:id', async (req, res) => {
-    try {
-       
-        await Recipe.findByIdAndDelete(req.params.id);
-
-        res.json({ msg: 'Item Deleted' }); 
-        
-    } catch (err) {
-        console.error(err)
-        res.status(500).json({msg: 'Server error'})
-    }
-})
+router.delete('/:id', recipeCTRL.deleteOneRecipe);
 
 
 export default router;
