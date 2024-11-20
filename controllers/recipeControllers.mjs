@@ -39,8 +39,21 @@ async function getOneRecipe(req, res) {
     } catch (err) {
         console.error(err);
         res.status(500).json({msg: 'Server error'});
-    }
+    };
+};
+
+async function updateOneRecipe(req, res) {
+    try {
+
+        let updatedRecipe = await Recipe.findByIdAndUpdate(req.params.id, req.body, { new: true });
+
+        res.json(updatedRecipe);
+
+    } catch (err) {
+        rconsole.error(err);
+        res.status(500).json({msg: 'Server error'});
+    };
 };
 
 
-export default { createRecipe, getAllRecipe, getOneRecipe }
+export default { createRecipe, getAllRecipe, getOneRecipe, updateOneRecipe }
