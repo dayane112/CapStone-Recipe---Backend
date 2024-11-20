@@ -30,5 +30,6 @@ router.patch('/:id', recipeCTRL.updateOneRecipe);
 // Delete
 router.delete('/:id', recipeCTRL.deleteOneRecipe);
 
+// router.route('/seed').get(recipeCTRL.seedDB);
 
 export default router;

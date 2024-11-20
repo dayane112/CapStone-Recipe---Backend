@@ -68,5 +68,22 @@ async function deleteOneRecipe(req, res) {
     };
 };
 
+async function seedDB(req, res) {
+    try {
 
-export default { createRecipe, getAllRecipe, getOneRecipe, updateOneRecipe, deleteOneRecipe };
+        //Delete everything
+      await Recipe.deleteMany({}); 
+
+      //Reseed with new data
+      await Recipe.create(recipe); 
+  
+      res.json({ msg: 'DB Seeded' });
+
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ msg: 'Server Error' });
+    }
+  }
+
+
+export default { createRecipe, getAllRecipe, getOneRecipe, updateOneRecipe, deleteOneRecipe, seedDB };
