@@ -29,5 +29,42 @@ export default recipe = [
             "* If you don't have a baking stone, you are welcome to try using an inverted cookie sheet. Please note your bread will not have as crisp of a crust."
         ]
     },
-    
+    {
+        name: "Sweet Potato Casserole",
+        category: "dinner",
+        level: "medium",
+        serving: 12,
+        total: "90 minutes",
+        ingredient: [
+            "Sweet Potato Layer:",
+            "5 pounds sweet potatoes",
+            "4 tablespoons butter",
+            "2 eggs slightly beaten",
+            "1 teaspoon salt",
+            "1 teaspoon ground cinnamon",
+            "1/2 teaspoon vanilla extract",
+            "1/2 teaspoon ground nutmeg",
+            "1/2 cup dark brown sugar",
+            "1/4 cup heavy cream",
+            "Nonstick cooking spray",
+            "Cookie Crust Layer:",
+            "1/2 cup all-purpose flour",
+            "1 cup dark brown sugar",
+            "1/4 teaspoon salt",
+            "1 cup quick-cooking oats",
+            "1/2 teaspoon ground cinnamon",
+            "1/4 pound butter - 1/2 cup",
+            "2 cups miniature marshmallows"
+        ],
+        direction: [
+            "Sweet Potato Layer",
+            "Preheat the oven to 350 degrees °F",
+            "Wrap sweet potatoes in foil, place them on a baking sheet and bake for about 1 hour. After 1 hour, test by piercing with a fork; if you can pierce them easily, they are done baking. If not, bake them a little longer and test again. Allow the sweet potatoes to cool until you can handle them, remove foil, and remove skins by simply pushing off the skins from the flesh of the potato.",
+            "Place the cooked potatoes into a large bowl. If using canned sweet potatoes, skip the baking. Just open the cans and drain off the syrup. Mash the sweet potatoes with the butter using a pastry blender or a potato masher until mostly smooth.",
+            "Add the eggs, salt, cinnamon, vanilla, and nutmeg and beat until you have a uniform mixture. Add the brown sugar and cream and mix well.",
+            "Oatmeal Cookie Crust",
+            "Combine the flour, brown sugar, salt, oats, and cinnamon in a medium bowl and stir together well. Stir in the 1/4 pound butter with a fork until you have a crumbly mixture. If you had turned off the oven, heat it again to 350 degrees °F. Lightly coat a 9 x 13-inch baking pan with cooking spray.",
+            "Spreading the sweet potatoes in the pan. Top with the marshmallows, then crumble the oatmeal crust on top of the marshmallows. Bake 30 to 45 minutes."
+        ]
+    },
 ]
