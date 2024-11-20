@@ -11,24 +11,19 @@ const router = express.Router();
 // });
 
 
-// Create
-router.post('/', recipeCTRL.createRecipe);
+// Create/ReadALl
+router
+    .route('/')
+    .post(recipeCTRL.createRecipe)
+    .get(recipeCTRL.getAllRecipe);
 
 
-// Read
-router.get('/', recipeCTRL.getAllRecipe);
-
-
-// Read by ID
-router.get('/:id', recipeCTRL.getOneRecipe);
-
-
-// Update
-router.patch('/:id', recipeCTRL.updateOneRecipe);
-
-
-// Delete
-router.delete('/:id', recipeCTRL.deleteOneRecipe);
+// GetOne/Update/Delete
+router
+    .route('/:id')
+    .get(recipeCTRL.getOneRecipe)
+    .patch(recipeCTRL.updateOneRecipe)
+    .delete(recipeCTRL.deleteOneRecipe);
 
 // router.route('/seed').get(recipeCTRL.seedDB);
 
