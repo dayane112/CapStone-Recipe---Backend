@@ -29,5 +29,18 @@ async function getAllRecipe(req, res) {
     };
 };
 
+async function getOneRecipe(req, res) {
+    try {
 
-export default { createRecipe, getAllRecipe }
+        let oneRecipe = await Recipe.findById(req.params.id);
+
+        res.json(oneRecipe);
+
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({msg: 'Server error'});
+    }
+};
+
+
+export default { createRecipe, getAllRecipe, getOneRecipe }
