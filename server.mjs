@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import connectDB from './db/conn.mjs';
 import recipeRoute from './routes/recipeRoute.mjs';
+import cors from 'cors'
 
 
 // setup
@@ -17,6 +18,7 @@ connectDB();
 
 
 // Middleware
+app.use( cors() )
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
 
