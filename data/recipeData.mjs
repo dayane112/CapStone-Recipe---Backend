@@ -65,7 +65,8 @@ const recipe = [
             "Oatmeal Cookie Crust",
             "Combine the flour, brown sugar, salt, oats, and cinnamon in a medium bowl and stir together well. Stir in the 1/4 pound butter with a fork until you have a crumbly mixture. If you had turned off the oven, heat it again to 350 degrees °F. Lightly coat a 9 x 13-inch baking pan with cooking spray.",
             "Spreading the sweet potatoes in the pan. Top with the marshmallows, then crumble the oatmeal crust on top of the marshmallows. Bake 30 to 45 minutes."
-        ]
+        ],
+       
     },
 ]
 
