@@ -27,7 +27,8 @@ const recipe = [
             "Alternate method:",
             "For a crustier bread, let your shaped loaves rise for 45 minutes. Preheat the oven to 500°F and place an empty cast iron or aluminum roasting pan into the bottom of the oven. Preheat for 15 minutes. Meanwhile heat 1 cup of boiling water on the stove. Brush the loaves with cold water, place in the oven. Pour boiling water into the empty tray. Bake for 10 minutes. Lower the temperature to 400°F and bake for 10 more minutes. Remove from the oven and place on a cooling rack. Let cool for at least 30 minutes before slicing.",
             "* If you don't have a baking stone, you are welcome to try using an inverted cookie sheet. Please note your bread will not have as crisp of a crust."
-        ]
+        ],
+        image: '/images/Bread.JPG'
     },
     {
         name: "Sweet Potato Casserole",
@@ -66,7 +67,7 @@ const recipe = [
             "Combine the flour, brown sugar, salt, oats, and cinnamon in a medium bowl and stir together well. Stir in the 1/4 pound butter with a fork until you have a crumbly mixture. If you had turned off the oven, heat it again to 350 degrees °F. Lightly coat a 9 x 13-inch baking pan with cooking spray.",
             "Spreading the sweet potatoes in the pan. Top with the marshmallows, then crumble the oatmeal crust on top of the marshmallows. Bake 30 to 45 minutes."
         ],
-       
+        image: '/images/SweetPotatoCasserole.JPG'
     },
 ]
 
