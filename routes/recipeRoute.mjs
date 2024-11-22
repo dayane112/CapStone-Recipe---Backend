@@ -1,6 +1,5 @@
 import express from 'express';
 import recipeCTRL from '../controllers/recipeControllers.mjs';
-import Recipe from '../model/recipeSchema.mjs';
 
 const router = express.Router();
 
@@ -10,6 +9,8 @@ const router = express.Router();
 //     res.send(`This is a test post`)
 // });
 
+// seed route
+// router.route('/seed').get(recipeCTRL.seedDB);
 
 // Create/ReadALl
 router
@@ -25,6 +26,7 @@ router
     .patch(recipeCTRL.updateOneRecipe)
     .delete(recipeCTRL.deleteOneRecipe);
 
-// router.route('/seed').get(recipeCTRL.seedDB);
+    
+
 
 export default router;
