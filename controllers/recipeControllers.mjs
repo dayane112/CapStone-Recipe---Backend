@@ -50,7 +50,7 @@ async function updateOneRecipe(req, res) {
         res.json(updatedRecipe);
 
     } catch (err) {
-        rconsole.error(err);
+        console.error(err);
         res.status(500).json({msg: 'Server error'});
     };
 };
