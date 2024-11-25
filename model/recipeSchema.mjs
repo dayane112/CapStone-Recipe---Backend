@@ -27,13 +27,13 @@ const recipeSchema = new mongoose.Schema({
     ingredient: [
         {
             type: String,
-            required: true
+            // required: true
         },
     ],
     direction: [
         {
             type: String,
-            required: true,
+            // required: true,
         },
     ],
     image: { 
