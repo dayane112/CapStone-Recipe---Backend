@@ -10,7 +10,7 @@ const router = express.Router();
 // });
 
 // seed route
-// router.route('/seed').get(recipeCTRL.seedDB);
+router.route('/seed').get(recipeCTRL.seedDB);
 
 // Create/ReadALl
 router
@@ -23,7 +23,7 @@ router
 router
     .route('/:id')
     .get(recipeCTRL.getOneRecipe)
-    .patch(recipeCTRL.updateOneRecipe)
+    .put(recipeCTRL.updateOneRecipe)
     .delete(recipeCTRL.deleteOneRecipe);
 
     
