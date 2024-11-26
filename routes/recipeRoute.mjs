@@ -10,7 +10,7 @@ const router = express.Router();
 // });
 
 // seed route
-router.route('/seed').get(recipeCTRL.seedDB);
+// router.route('/seed').get(recipeCTRL.seedDB);
 
 // Create/ReadALl
 router
